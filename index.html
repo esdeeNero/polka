@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Полка — место для ваших творческих работ. Откройте для себя иллюстрации, фотографии и дизайн независимых авторов.">
+  <meta name="theme-color" content="#f5f3fa">
+  <title>Полка — сделано вами, найдено здесь</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#works">Перейти к работам</a>
+  <header class="header wrap">
+    <a class="logo" href="#" aria-label="Полка — главная"><span class="logo-icon" aria-hidden="true">п</span>полка<span class="logo-dot">.</span></a>
+    <nav aria-label="Основная навигация"><a href="#works">Найти работу</a><a href="#how">Как это работает</a></nav>
+    <button class="button button-dark header-cta" data-author>Я автор <span aria-hidden="true">+</span></button>
+  </header>
+  <main>
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy"><div class="eyebrow"><span class="small-star" aria-hidden="true">✳</span> МЕСТО, ГДЕ ТВОРЧЕСТВО НАХОДИТ СВОИХ</div>
+        <h1 id="hero-title">У ваших идей<br>есть <span class="highlight">своя полка.</span></h1>
+        <p>Создавайте то, что любите. Находите то, что&nbsp;вдохновляет. Работы независимых авторов — для&nbsp;ваших больших и маленьких проектов.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#works">Найти что-то своё</a><button class="text-button" data-author>Разместить работу <span aria-hidden="true">+</span></button></div>
+        <div class="hero-note"><span class="note-line"></span> От первой идеи до чьего-то любимого проекта</div>
+      </div>
+      <div class="hero-art" role="img" aria-label="Коллаж авторских работ: абстрактный цветок, типографический постер и объёмные фигуры">
+        <span class="orbit-label">маленькие находки.<br>большое вдохновение.</span>
+        <div class="art-card poster-flower"><span>botanical studies / 01</span><div class="flower"><i></i><i></i><i></i><i></i><b></b></div><strong>Всё начинается<br>с любопытства.</strong></div>
+        <div class="art-card poster-type"><span>MAKE SOMETHING</span><strong>не<br>как<br>все<span>®</span></strong><small>студия простых идей</small></div>
+        <div class="art-card poster-orb"><div class="orb"></div><span>play with possibilities</span></div>
+        <div class="art-sticker" aria-hidden="true">сделано<br>с душой <span>✳</span></div>
+        <span class="art-caption">У каждой работы — свой человек.</span>
+      </div>
+    </section>
+    <div class="ticker" aria-hidden="true"><div class="wrap">МЕНЬШЕ ШАБЛОННОГО <span>✳</span> БОЛЬШЕ СВОЕГО <span>✳</span> ПОДДЕРЖИВАЙТЕ АВТОРОВ <span>✳</span> НАХОДИТЕ НЕОЖИДАННОЕ <span>✳</span></div></div>
+    <section class="works wrap" id="works" aria-labelledby="works-title">
+      <div class="section-heading"><div><div class="eyebrow">ВИТРИНА ИДЕЙ</div><h2 id="works-title">Кажется, это ваше.</h2></div><p>Работы, с которых хочется<br>начать что-то новое.</p></div>
+      <div class="catalog-toolbar"><div class="filters" role="group" aria-label="Категории работ"><button class="filter active" data-filter="all" aria-pressed="true">Все работы <span>6</span></button><button class="filter" data-filter="illustration" aria-pressed="false">Иллюстрации</button><button class="filter" data-filter="design" aria-pressed="false">Дизайн</button><button class="filter" data-filter="photo" aria-pressed="false">Фотография</button><button class="filter" data-filter="3d" aria-pressed="false">3D</button></div><span class="demo-label">Демонстрационная коллекция</span></div>
+      <p class="sr-only" id="filter-status" role="status" aria-live="polite"></p>
+      <div class="works-grid">
+        <article class="work" data-category="illustration"><button class="work-open" data-work="Тихий сад" data-price="1 200 ₽" aria-label="Подробнее о работе «Тихий сад»"><div class="work-image image-garden"><span class="work-tag">Иллюстрация</span><div class="garden-sun"></div><div class="garden-vase"></div><i class="leaf leaf-one"></i><i class="leaf leaf-two"></i><i class="leaf leaf-three"></i><span class="garden-word">slow<br>living.</span></div><div class="work-info"><h3>Тихий сад</h3><strong>1 200 ₽</strong></div><p class="work-author">Анна Листова <span>· Цифровая иллюстрация</span></p></button></article>
+        <article class="work" data-category="design"><button class="work-open" data-work="Вне рамок" data-price="850 ₽" aria-label="Подробнее о работе «Вне рамок»"><div class="work-image image-type"><span class="work-tag">Дизайн</span><span class="type-mini">EXPERIMENTAL TYPE SERIES — 2026</span><div class="type-main">вне<br><em>рамок.</em></div><span class="type-bottom">мыслить шире / думать иначе <b>✳</b></span></div><div class="work-info"><h3>Вне рамок</h3><strong>850 ₽</strong></div><p class="work-author">Марк Белов <span>· Типографический постер</span></p></button></article>
+        <article class="work" data-category="3d"><button class="work-open" data-work="Мягкая геометрия" data-price="1 800 ₽" aria-label="Подробнее о работе «Мягкая геометрия»"><div class="work-image image-3d"><span class="work-tag">3D</span><div class="shape-ring"></div><div class="shape-ball"></div><div class="shape-floor"></div></div><div class="work-info"><h3>Мягкая геометрия</h3><strong>1 800 ₽</strong></div><p class="work-author">Саша Мир <span>· 3D-композиция</span></p></button></article>
+        <article class="work" data-category="photo"><button class="work-open" data-work="Наедине с морем" data-price="1 500 ₽" aria-label="Подробнее о работе «Наедине с морем»"><div class="work-image image-sea"><span class="work-tag">Фотография</span><div class="sea-sun"></div><div class="sea-water"></div><div class="sea-rock"></div><span class="sea-note">somewhere, slowly</span></div><div class="work-info"><h3>Наедине с морем</h3><strong>1 500 ₽</strong></div><p class="work-author">Даша Свет <span>· Концепт фотопринта</span></p></button></article>
+        <article class="work" data-category="illustration"><button class="work-open" data-work="Хороший день" data-price="650 ₽" aria-label="Подробнее о работе «Хороший день»"><div class="work-image image-smile"><span class="work-tag">Иллюстрация</span><div class="smile-flower">✿<span class="smile-face">◡</span></div><span class="smile-note">a little joy goes a long way.</span></div><div class="work-info"><h3>Хороший день</h3><strong>650 ₽</strong></div><p class="work-author">Ника Цвет <span>· Иллюстрация для печати</span></p></button></article>
+        <article class="work" data-category="design"><button class="work-open" data-work="Форма и смысл" data-price="2 400 ₽" aria-label="Подробнее о работе «Форма и смысл»"><div class="work-image image-brand"><span class="work-tag">Дизайн</span><div class="brand-sheet"><span>форма<br>и смысл<span class="brand-symbol">✳</span></span><small>визуальная система / identity</small></div><div class="brand-card">ф<span>с</span></div></div><div class="work-info"><h3>Форма и смысл</h3><strong>2 400 ₽</strong></div><p class="work-author">Студия Точка <span>· Концепт айдентики</span></p></button></article>
+      </div>
+      <p class="collection-note">Примеры работ, авторов и цен показывают идею будущей площадки. Покупки пока недоступны.</p>
+    </section>
+    <section class="how wrap" id="how" aria-labelledby="how-title"><div class="section-heading"><div><div class="eyebrow">ВСЁ ДОВОЛЬНО ПРОСТО</div><h2 id="how-title">От человека к человеку.</h2></div></div><div class="steps"><div><span class="step-icon" aria-hidden="true">✳</span><h3>Создавайте</h3><p>Иллюстрации, фотографии, дизайн — всё, во что вы вкладываете себя.</p></div><div><span class="step-icon" aria-hidden="true">▦</span><h3>Делитесь</h3><p>В будущем здесь можно будет оформить профиль и выставить свои работы.</p></div><div><span class="step-icon" aria-hidden="true">♡</span><h3>Находите своих</h3><p>А покупатели смогут открывать новых авторов и приобретать их работы.</p></div></div></section>
+    <section class="author-banner wrap" id="authors"><div><div class="eyebrow">ТВОРЧЕСТВО НЕ ДОЛЖНО ЛЕЖАТЬ В СТОЛЕ</div><h2>Пора поставить<br>своё на полку.</h2><p>Мы только начинаем. И здесь есть место для ваших идей.</p><button class="button button-dark" data-author>Хочу стать автором <span aria-hidden="true">+</span></button></div><div class="banner-star" aria-hidden="true">✳</div></section>
+  </main>
+  <footer class="footer wrap"><a class="logo" href="#">полка<span class="logo-dot">.</span></a><p>Место для того, что вы создаёте.</p><span>© <span id="year">2026</span> Полка · Первая глава</span></footer>
+  <dialog id="info-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Закрыть окно">×</button><div class="eyebrow">ПОЛКА · НАЧАЛО</div><h2 id="dialog-title"></h2><p id="dialog-description"></p><button class="button button-dark dialog-done">Понятно</button></dialog>
+</body>
+</html>
