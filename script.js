@@ -32,7 +32,7 @@ function showInfo(title, description) {
 
 document.querySelectorAll('[data-author]').forEach((button) => {
   button.addEventListener('click', () => {
-    showInfo('Ваша полка скоро появится', 'Сейчас это первая версия площадки. Публикация работ и личные профили появятся на следующем этапе. Пока можно познакомиться с идеей и посмотреть демонстрационную коллекцию.');
+    window.location.href = 'auth.html';
   });
 });
 

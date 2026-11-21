@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Вход и регистрация на Полке — площадке творческих работ.">
+  <meta name="theme-color" content="#f5f3fa">
+  <title>Вход и регистрация — Полка</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="auth.js" defer></script>
+</head>
+<body class="auth-page">
+  <header class="header wrap">
+    <a class="logo" href="index.html" aria-label="Полка — главная"><span class="logo-icon" aria-hidden="true">п</span>полка<span class="logo-dot">.</span></a>
+    <a class="text-button" href="index.html">На главную</a>
+  </header>
+  <main class="auth-layout wrap">
+    <section class="auth-intro" aria-labelledby="auth-heading">
+      <div class="eyebrow">ВАШЕ МЕСТО НА ПОЛКЕ</div>
+      <h1 id="auth-heading">Большие идеи<br>начинаются<br>со <span class="highlight">знакомства.</span></h1>
+      <p>Заходите, осматривайтесь, находите своё.<br>Рады видеть вас на Полке.</p>
+      <span class="auth-star" aria-hidden="true">✳</span>
+    </section>
+    <section class="auth-card" aria-label="Аккаунт">
+      <div id="auth-forms">
+        <div class="auth-tabs" role="group" aria-label="Выберите действие">
+          <button type="button" class="auth-tab active" data-auth-mode="login" aria-pressed="true">Вход</button>
+          <button type="button" class="auth-tab" data-auth-mode="register" aria-pressed="false">Регистрация</button>
+        </div>
+        <h2 id="form-title">С возвращением.</h2>
+        <p class="auth-caption" id="form-description">Войдите в свой аккаунт.</p>
+        <form id="auth-form" novalidate>
+          <label for="username">Логин</label>
+          <input id="username" name="username" type="text" autocomplete="username" placeholder="Ваш логин">
+          <label for="password">Пароль</label>
+          <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Ваш пароль">
+          <p class="auth-message" id="auth-message" role="status" aria-live="polite"></p>
+          <button class="button button-dark auth-submit" type="submit" id="auth-submit">Войти</button>
+        </form>
+        <div class="demo-accounts"><span class="eyebrow">ПОПРОБУЙТЕ ТЕСТОВЫЙ АККАУНТ</span><p>Администратор: <code>admin</code> / <code>admin</code><br>Пользователь: <code>user</code> / <code>user</code></p></div>
+        <p class="auth-local-note">Учебная версия: новые аккаунты сохраняются только в этом браузере. Используйте тестовый пароль.</p>
+      </div>
+      <div id="account-panel" hidden>
+        <div class="eyebrow">ВЫ НА СВОЕЙ ПОЛКЕ</div>
+        <h2>Привет, <span id="account-name"></span>!</h2>
+        <p class="account-role" id="account-role"></p>
+        <p class="auth-caption">Вы вошли в аккаунт. А пока ваша полка готовится к первым работам, загляните в коллекцию.</p>
+        <a class="button button-dark auth-submit" href="index.html#works">Посмотреть работы</a>
+        <button class="text-button logout-button" type="button" id="logout">Выйти из аккаунта</button>
+      </div>
+    </section>
+  </main>
+  <footer class="footer wrap"><a class="logo" href="index.html">полка<span class="logo-dot">.</span></a><p>Место для того, что вы создаёте.</p><span>Первая глава</span></footer>
+</body>
+</html>

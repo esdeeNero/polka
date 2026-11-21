@@ -9,13 +9,14 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
+  <script src="auth.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#works">Перейти к работам</a>
   <header class="header wrap">
     <a class="logo" href="#" aria-label="Полка — главная"><span class="logo-icon" aria-hidden="true">п</span>полка<span class="logo-dot">.</span></a>
     <nav aria-label="Основная навигация"><a href="#works">Найти работу</a><a href="#how">Как это работает</a></nav>
-    <button class="button button-dark header-cta" data-author>Я автор <span aria-hidden="true">+</span></button>
+    <div class="header-actions"><a class="account-link" href="auth.html" data-account-link>Войти</a><a class="button button-dark header-cta" href="auth.html">Я автор <span aria-hidden="true">+</span></a></div>
   </header>
   <main>
     <section class="hero wrap" aria-labelledby="hero-title">
